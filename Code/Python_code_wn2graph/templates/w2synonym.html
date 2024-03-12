@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% set active_page = "w2synonym" %}
+
+
+
+{% block content %}
+    <style>
+        td {align:center;padding:2px;padding-left: 4px;padding-right:4px}
+
+        .form {padding-top: 5px;padding-bottom:10px}
+    </style>
+
+    <h1>{% block title %} WordNet Graph {% endblock %}</h1>
+    <p>Using the forms below fill in your desired query and press the button to get the results, some results may take a couple seconds.</p>
+    <div style="z-index: 1000">
+        <div class="form">
+            <h3>Word 2 Synonym</h3>
+            <p>Will find the similarity levels for the synonyms of inputted word.</p>
+            <form class="form" method="POST" action="{{ url_for('w2synonym') }}">
+                <div class="form-group">
+                    {{ form.word1.label(class="form-label") }}
+                    {{ form.word1(class="form-control") }}
+                </div>
+                {{ form.submit2(class="btn btn-default") }}
+            </form>
+        </div>
+    </div>
+
+    <hr/>
+
+    {% if cypherOut %}
+    <div align="center">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    {% for heading, data in cypherOut[0].items() %}
+                    <th scope="col">{{ heading }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for x in cypherOut %}
+
+                <tr>
+                    <td scope="row">{{ loop.index }}</td>
+                    {% for heading, data in x.items() %}
+                    <td style="padding-bottom: 5px">{{ data }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    {% else %}
+    <div align="center">
+        <h4><b>Error, either input is not lowercase or word is not in graph</b></h4>
+    </div>
+    {% endif %}
+
+{% endblock %}
