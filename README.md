@@ -14,7 +14,7 @@ Semantic similarity analysis plays a crucial role in various fields such as data
 * Nature Language Tool-Kit (NLTK): WordNet Corpus, Semantic Similarity Package
 
 * Neo4j: Graphic database(for WordNet modelling), Graph Data Sience Library(for WordNet data query and traversal), Cypher query languge
-<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Example%20Blocks%20of%20Property%20Graph.png" width="200" height="430">
+<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Example%20Blocks%20of%20Property%20Graph.png" width="350" height="430">
 
 * Flask: Python web application framework, WTForms(pass data from the front-end to the back-end)
 
