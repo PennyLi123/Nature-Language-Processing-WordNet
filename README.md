@@ -51,10 +51,10 @@ This involved the transformation of WordNet's intricate semantic relations into 
 
 For example, the graph model in Neo4j for word 'open'is shown below. Node with light purple colour indicates 'open' as simplest written form without meaning. Nodes with red, blue, green colour on the left of the purple written form indicate the POS(part of speech) of word 'open' are noun, adjective and adjective satellite respectively. Pink node on the right side of the purple written form indicates 'open' as verb. Then a ralation "sense" with direction start from "lex_Entry"(pink verb node) to "lex_Sense"(red node on the right side), and another relation "lexicalised Sense" with direction start from "lex_sense"(red node) to "lex_concept"(nude node). 
 
-<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Example%20of%20graph%20model%20in%20Neo4j.png" width="430">
+<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Example%20of%20graph%20model%20in%20Neo4j.png" width="630">
 
 - Path similarity Cypher Query in Neo4j
-<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Path%20similarity%20Cypher%20Query%20in%20Neo4j.png" width="330">
+<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Path%20similarity%20Cypher%20Query%20in%20Neo4j.png" width="290">
 
 - Example of shortest path from blue nodes “Sense” to “Sense”in Neo4j
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/shortest%20path%20from%20“Sense”%20to%20“Sense”in%20Neo4j.png" width="430">
