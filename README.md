@@ -57,7 +57,7 @@ For example, the graph model in Neo4j for word 'open'is shown below. Node with l
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Path%20similarity%20Cypher%20Query%20in%20Neo4j.png" width="290">
 
 - Example of shortest path from blue nodes “Sense” to “Sense”in Neo4j
-<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/shortest%20path%20from%20“Sense”%20to%20“Sense”in%20Neo4j.png" width="430">
+<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/shortest%20path%20from%20“Sense”%20to%20“Sense”in%20Neo4j.png" width="630">
 
 - Results of path similarity in Neo4j
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Results%20of%20path%20similarity%20in%20Neo4j.png" width="430">
@@ -77,11 +77,11 @@ With NLTK WordNet corpus data downloaded, utilized WordNet::similarity Package i
 
 - Table displaying results of nltk and neo4j methods
 
-<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Table%20displaying%20results%20of%20nltk%20and%20neo4j%20methods.png" width="430">
+<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Table%20displaying%20results%20of%20nltk%20and%20neo4j%20methods.png" width="730">
 
 # Results
 - Summary results of each measures for Noun
 
-<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Summary%20results%20of%20each%20measures%20for%20Noun.png" width="730">
+<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Summary%20results%20of%20each%20measures%20for%20Noun.png" width="430">
 
 In conclusion, the comparison revealed that NLTK's path-based similarity values are more accurate than neo4j's due to differences in their graph models and is-a hierarchies. The Resnik and Lin methods are ineffective for distant concept pairs with root node lcs, yielding 0 values. Jcn and Lin methods, utilizing ic values, prove more accurate for similarity measurement.
