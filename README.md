@@ -9,7 +9,9 @@ Semantic similarity analysis plays a crucial role in various fields such as data
 # Tools used
 * Database: WordNet lexical database 
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Fragment%20of%20WordNet%20concept%20in%20taxonomy.png" width="430" height="250">
-<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Fragment%20of%20WordNet%20concept%20in%20taxonomy.png" style="width: 430px; height: 250px;">
+
+<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Fragment%20of%20WordNet%20concept%20in%20taxonomy.png" style="max-width: 100%; height: auto;">
+
 
 
 * Nature Language Tool-Kit (NLTK): WordNet Corpus, Semantic Similarity Package
