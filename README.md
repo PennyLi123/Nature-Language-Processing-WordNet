@@ -82,6 +82,6 @@ With NLTK WordNet corpus data downloaded, utilized WordNet::similarity Package i
 # Results
 - Summary results of each measures for Noun
 
-<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Summary%20results%20of%20each%20measures%20for%20Noun.png" width="430">
+<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Summary%20results%20of%20each%20measures%20for%20Noun.png" width="630">
 
 In conclusion, the comparison revealed that NLTK's path-based similarity values are more accurate than neo4j's due to differences in their graph models and is-a hierarchies. The Resnik and Lin methods are ineffective for distant concept pairs with root node lcs, yielding 0 values. Jcn and Lin methods, utilizing ic values, prove more accurate for similarity measurement.
