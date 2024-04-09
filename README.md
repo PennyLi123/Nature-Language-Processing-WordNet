@@ -8,10 +8,13 @@ Semantic similarity analysis plays a crucial role in various fields such as data
 
 # Tools used
 * Database: WordNet lexical database 
-<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Fragment%20of%20WordNet%20concept%20in%20taxonomy.png" width="430">
+<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Fragment%20of%20WordNet%20concept%20in%20taxonomy.png" width="430" length="250">
+
 * Nature Language Tool-Kit (NLTK): WordNet Corpus, Semantic Similarity Package
+
 * Neo4j: Graphic database(for WordNet modelling), Graph Data Sience Library(for WordNet data query and traversal), Cypher query languge
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Example%20Blocks%20of%20Property%20Graph.png" width="430">
+
 * Flask: Python web application framework, WTForms(pass data from the front-end to the back-end)
 
 # System Architecture
@@ -34,21 +37,24 @@ Basic model of pullData.py
 * Loading and modelling
 Use the python library Py2neo for this section, which serves as the bridge between Python and Neo4j Server 4.4.7, allowing us to run queries on the graph. Import a config.py file, which stores frequently used variables for graph queries and the graph credentials that connect to the graph.
 Basic model of setupGraph.py
-<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Basic%20model%20of%20setupGraph.png"width="430">
+<img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Basic%20model%20of%20setupGraph.png" width="430">
 
 ## 2.Neo4j Similarity Analysis
 This involved the transformation of WordNet's intricate semantic relations into a structured graph representation, facilitating efficient storage and traversal. 
+
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Lexical%20structure%20model%20of%20Wordnet%20Graph.png" width="430">
+
 For example, the graph model in Neo4j for word 'open'is shown below. Node with light purple colour indicates 'open' as simplest written form without meaning. Nodes with red, blue, green colour on the left of the purple written form indicate the POS(part of speech) of word 'open' are noun, adjective and adjective satellite respectively. Pink node on the right side of the purple written form indicates 'open' as verb. Then a ralation "sense" with direction start from "lex_Entry"(pink verb node) to "lex_Sense"(red node on the right side), and another relation "lexicalised Sense" with direction start from "lex_sense"(red node) to "lex_concept"(nude node). 
+
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Example%20of%20graph%20model%20in%20Neo4j.png" width="430">
 
-Path similarity Cypher Query in Neo4j
+- Path similarity Cypher Query in Neo4j
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Path%20similarity%20Cypher%20Query%20in%20Neo4j.png" width="430">
 
-Example of shortest path from blue nodes “Sense” to “Sense”in Neo4j
+- Example of shortest path from blue nodes “Sense” to “Sense”in Neo4j
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/shortest%20path%20from%20“Sense”%20to%20“Sense”in%20Neo4j.png" width="430">
 
-Results of path similarity in Neo4j
+- Results of path similarity in Neo4j
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Results%20of%20path%20similarity%20in%20Neo4j.png" width="430">
 
 ## 3.Install NLTK library and download WordNet corpus
@@ -60,14 +66,17 @@ With NLTK WordNet corpus data downloaded, utilized WordNet::similarity Package i
 - Developed a web interface to allow users to interactively query and explore semantic similarity values between English words and enables users to apply different similarity methods and compare results.
 - As the user inputs the source word and target word and sends a run query request, the results of both neo4j and nltk will be displayed in a table together for a visual cross-sectional comparison.
 
-Web page of word to word sim function
+- Web page of word to word sim function
+
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/web%20page%20of%20word%20to%20word%20sim%20function.png" width="430">
 
+- Table displaying results of nltk and neo4j methods
 
-Table displaying results of nltk and neo4j methods
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Table%20displaying%20results%20of%20nltk%20and%20neo4j%20methods.png" width="430">
 
 # Results
-Summary results of each measures for Noun
+- Summary results of each measures for Noun
+
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Summary%20results%20of%20each%20measures%20for%20Noun.png" width="430">
+
 In conclusion, the comparison revealed that NLTK's path-based similarity values are more accurate than neo4j's due to differences in their graph models and is-a hierarchies. The Resnik and Lin methods are ineffective for distant concept pairs with root node lcs, yielding 0 values. Jcn and Lin methods, utilizing ic values, prove more accurate for similarity measurement.
