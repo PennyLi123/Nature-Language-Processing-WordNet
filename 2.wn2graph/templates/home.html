@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% set active_page = "home" %}
+
+
+{% block content %}
+    <style>
+
+        a {align:center}
+
+    </style>
+
+    <h1>{% block title %} Home {% endblock %}</h1>
+    <p>Using the buttons below, choose the query you wish to run against the WordNet graph database.</p>
+
+
+    <a class="btn btn-dark my-auto" href="{{ url_for('w2word') }}">Word to Word</a>
+    <a class="btn btn-dark my-auto" href="{{ url_for('w2synonym') }}">Word to Synonyms</a>
+    <a class="btn btn-dark my-auto" href="{{ url_for('w2concept2w') }}">Words from related Concepts</a>
+    <a class="btn btn-dark my-auto" href="{{ url_for('w2w_gds') }}">Word to Word GDS function Sim</a>
+    <a class="btn btn-dark my-auto" href="{{ url_for('w2w_sim') }}">Word to Word sim function</a>
+
+
+{% endblock %}
