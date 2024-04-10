@@ -1,7 +1,7 @@
 # Nature-Language-Processing-WordNet
 
 # Project Overview
-A Study of Text Similarity Methods using 𝐍𝐚𝐭𝐮𝐫𝐚𝐥 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 𝐓𝐨𝐨𝐥 (𝐍𝐋𝐓𝐊) with 𝐖𝐨𝐫𝐝𝐧𝐞𝐭 (𝐥𝐞𝐱𝐢𝐜𝐚𝐥 𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞), which is modelled into 𝐍𝐞𝐨𝟒𝐣(𝐠𝐫𝐚𝐩𝐡𝐢𝐜 𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞) for querying and traversing. Additionally, a 𝐰𝐞𝐛 𝐚𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧 was developed to allow users to interactively query and explore 𝐬𝐞𝐦𝐚𝐧𝐭𝐢𝐜 𝐬𝐢𝐦𝐢𝐥𝐚𝐫𝐢𝐭𝐲 𝐯𝐚𝐥𝐮𝐞𝐬 between English words.
+A Study of Text Similarity Methods using 𝑵𝒂𝒕𝒖𝒓𝒂𝒍 𝑳𝒂𝒏𝒈𝒖𝒂𝒈𝒆 𝑷𝒓𝒐𝒄𝒆𝒔𝒔𝒊𝒏𝒈 𝑻𝒐𝒐𝒍(𝑵𝑳𝑻𝑲) with 𝐖𝐨𝐫𝐝𝐧𝐞𝐭 (𝐥𝐞𝐱𝐢𝐜𝐚𝐥 𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞), which is modelled into 𝐍𝐞𝐨𝟒𝐣(𝐠𝐫𝐚𝐩𝐡𝐢𝐜 𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞) for querying and traversing. Additionally, a 𝐰𝐞𝐛 𝐚𝐩𝐩𝐥𝐢𝐜𝐚𝐭𝐢𝐨𝐧 was developed to allow users to interactively query and explore 𝐬𝐞𝐦𝐚𝐧𝐭𝐢𝐜 𝐬𝐢𝐦𝐢𝐥𝐚𝐫𝐢𝐭𝐲 𝐯𝐚𝐥𝐮𝐞𝐬 between English words.
 
 # Problem
 𝐒𝐞𝐦𝐚𝐧𝐭𝐢𝐜 𝐬𝐢𝐦𝐢𝐥𝐚𝐫𝐢𝐭𝐲 𝐚𝐧𝐚𝐥𝐲𝐬𝐢𝐬 plays a crucial role in various fields such as 𝐝𝐚𝐭𝐚 𝐩𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠, 𝐥𝐢𝐧𝐠𝐮𝐢𝐬𝐭𝐢𝐜𝐬, and 𝐚𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐢𝐧𝐭𝐞𝐥𝐥𝐢𝐠𝐞𝐧𝐜𝐞(𝐀𝐈). However, accurately measuring semantic similarity between concepts poses challenges, particularly when dealing with 𝐥𝐚𝐫𝐠𝐞 𝐥𝐞𝐱𝐢𝐜𝐚𝐥 𝐝𝐚𝐭𝐚𝐛𝐚𝐬𝐞𝐬 like 𝐖𝐨𝐫𝐝𝐍𝐞𝐭. Traditional literature-based methods may not fully exploit the rich semantic relationships within WordNet. Moreover, there is often a lack of integration between different similarity measures and data formats in some systems, which may impede 𝐜𝐨𝐦𝐩𝐫𝐞𝐡𝐞𝐧𝐬𝐢𝐯𝐞 𝐜𝐨𝐦𝐩𝐚𝐫𝐢𝐬𝐨𝐧𝐬 and 𝐞𝐯𝐚𝐥𝐮𝐚𝐭𝐢𝐨𝐧𝐬.
