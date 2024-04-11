@@ -20,8 +20,8 @@ A Study of Text Similarity Methods using 𝑵𝒂𝒕𝒖𝒓𝒂𝒍 𝑳𝒂�
 
 # System Architecture
 - The system is split into three main parts, 𝒑𝒖𝒍𝒍𝒊𝒏𝒈 𝒅𝒂𝒕𝒂, 𝒍𝒐𝒂𝒅𝒊𝒏𝒈 𝒅𝒂𝒕𝒂, and the 𝒊𝒏𝒕𝒆𝒓𝒇𝒂𝒄𝒆.
-- The solid blocks in the Figure below cover the similarity methods run against NLTK data, while the dashed block shows the process of similarity methods run against Neo4j. 
-- This involves downloading the `NLTK` data from its website and creating a new `SimilarityMethods.py` file to call the algorithm in the `nltk corpus reader` module and the `nltk data` package, to compute the results for the data received in `forms.py`, and then to supplement the `app.py` file with the 𝑵𝑳𝑻𝑲 𝒂𝒍𝒈𝒐𝒓𝒊𝒕𝒉𝒎𝒔 to handle the data received from forms and the results returned from `similarityMethods.py`, then finally the `app.py` file passes all the results to the 𝒘𝒆𝒃 𝒑𝒂𝒈𝒆 to display their results in a table.
+- The solid blocks in the Figure below cover the 𝒔𝒊𝒎𝒊𝒍𝒂𝒓𝒊𝒕𝒚 𝒎𝒆𝒕𝒉𝒐𝒅𝒔 run against `NLTK data`, while the dashed block shows the process of 𝒔𝒊𝒎𝒊𝒍𝒂𝒓𝒊𝒕𝒚 𝒎𝒆𝒕𝒉𝒐𝒅𝒔 run against `Neo4j`. 
+- This involves downloading the `NLTK data` from its website and creating a new `SimilarityMethods.py` file to call the algorithm in the `nltk corpus reader` module and the `nltk data` package, to compute the results for the data received in `forms.py`, and then to supplement the `app.py` file with the 𝑵𝑳𝑻𝑲 𝒂𝒍𝒈𝒐𝒓𝒊𝒕𝒉𝒎𝒔 to handle the data received from forms and the results returned from `similarityMethods.py`, then finally the `app.py` file passes all the results to the 𝒘𝒆𝒃 𝒑𝒂𝒈𝒆 to display their results in a table.
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/System%20Architecture.png" width="430">
 
 # Action
