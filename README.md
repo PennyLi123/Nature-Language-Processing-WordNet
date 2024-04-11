@@ -31,7 +31,7 @@ Used a created module called `wn2graph` using `Python 3.9`
 
 ### Basic model of pullData.py
 * Pulling data
-Using the `wn2graph` module `pullData.py` uses the library regex to search for IDs and POS with pattern search and requests for connecting to the WordNet RDF webpage to download the data to be used for loading. The retrieved data is then stored in a "data.pos.json"file.
+Using the `wn2graph` module `pullData.py` uses the library regex to search for IDs and POS with pattern search and requests for connecting to the WordNet RDF webpage to download the data to be used for loading. The retrieved data is then stored in a `"data.pos.json"`file.
 More details see attachment: 
 [2.wn2graph](https://github.com/PennyLi123/Nature-Language-Processing-WordNet/tree/main/2.wn2graph)
 
@@ -39,7 +39,7 @@ More details see attachment:
 
 ### Basic model of setupGraph.py
 * Loading and modelling
-Use the python library `Py2neo` for this section, which serves as the bridge between Python and Neo4j Server 4.4.7, allowing us to run queries on the graph. Import a `config.py` file, which stores frequently used variables for graph queries and the graph credentials that connect to the graph.
+Use the python library `Py2neo` for this section, which serves as the bridge between `Python` and `Neo4j Server 4.4.7`, allowing us to run queries on the graph. Import a `config.py` file, which stores frequently used variables for graph queries and the graph credentials that connect to the graph.
 
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Basic%20model%20of%20setupGraph.png" width="430">
 
