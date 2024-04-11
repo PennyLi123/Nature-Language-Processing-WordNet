@@ -96,6 +96,6 @@ Six similarity algorithms are implemented: Lch similarity, Wup similarity, Infor
 
 <img src="https://github.com/PennyLi123/Nature-Language-Processing-WordNet/blob/main/3.Screenshots/Summary%20results%20of%20each%20measures%20for%20Noun.png" width="630">
 
-In conclusion, the comparison revealed that 𝑵𝑳𝑻𝑲'𝒔 𝒑𝒂𝒕𝒉-𝒃𝒂𝒔𝒆𝒅 𝒔𝒊𝒎𝒊𝒍𝒂𝒓𝒊𝒕𝒚 𝒗𝒂𝒍𝒖𝒆𝒔 are 𝒎𝒐𝒓𝒆 𝒂𝒄𝒄𝒖𝒓𝒂𝒕𝒆 𝒕𝒉𝒂𝒏 𝑵𝒆𝒐4𝒋'𝒔 due to 𝒅𝒊𝒇𝒇𝒆𝒓𝒆𝒏𝒄𝒆𝒔 𝒊𝒏 𝒕𝒉𝒆𝒊𝒓 𝒈𝒓𝒂𝒑𝒉 𝒎𝒐𝒅𝒆𝒍𝒔 𝒂𝒏𝒅 𝒊𝒔-𝒂 𝒉𝒊𝒆𝒓𝒂𝒓𝒄𝒉𝒊𝒆𝒔.
+In conclusion, the comparison revealed that 𝑵𝑳𝑻𝑲'𝒔 𝒑𝒂𝒕𝒉-𝒃𝒂𝒔𝒆𝒅 𝒔𝒊𝒎𝒊𝒍𝒂𝒓𝒊𝒕𝒚 𝒗𝒂𝒍𝒖𝒆𝒔 are 𝒎𝒐𝒓𝒆 𝒂𝒄𝒄𝒖𝒓𝒂𝒕𝒆 𝒕𝒉𝒂𝒏 𝑵𝒆𝒐4𝒋'𝒔 due to differences in their 𝒈𝒓𝒂𝒑𝒉 𝒎𝒐𝒅𝒆𝒍𝒔 𝒂𝒏𝒅 𝒊𝒔-𝒂 𝒉𝒊𝒆𝒓𝒂𝒓𝒄𝒉𝒊𝒆𝒔.
 
 The Resnik and Lin methods are ineffective for distant concept pairs with root node lcs, yielding 0 values. Jcn and Lin methods, utilizing ic values, prove more accurate for similarity measurement.
